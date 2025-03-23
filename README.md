@@ -9,6 +9,6 @@ It also removes the notion of naive datetimes: each Pendulum instance is timezon
 Pendulum also improves the standard timedelta class by providing more intuitive methods and properties.</p>
 
 <h1>Resources</h1>
-- <a href="https://pendulum.eustace.io/">Official Website</a>
-- <a href="https://pendulum.eustace.io/docs/">Documentation</a>
-- <a href="https://github.com/python-pendulum/pendulum/issues">Issue Tracker</a>
+<li><a href="https://pendulum.eustace.io/">Official Website</a></li>
+<li><a href="https://pendulum.eustace.io/docs/">Documentation</a></li>
+<li><a href="https://github.com/python-pendulum/pendulum/issues">Issue Tracker</a></li>
