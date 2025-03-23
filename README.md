@@ -1,6 +1,6 @@
 <h1>pendulum-3.0.0</h1>
-<p>Why Pendulum?
-Native datetime instances are enough for basic cases but when you face more complex use-cases they often show limitations and are not so intuitive to work with. Pendulum provides a cleaner and more easy to use API while still relying on the standard library. So it’s still datetime but better.
+<h4>Why Pendulum?</h4>
+<p>Native datetime instances are enough for basic cases but when you face more complex use-cases they often show limitations and are not so intuitive to work with. Pendulum provides a cleaner and more easy to use API while still relying on the standard library. So it’s still datetime but better.
 
 Unlike other datetime libraries for Python, Pendulum is a drop-in replacement for the standard datetime class (it inherits from it), so, basically, you can replace all your datetime instances by DateTime instances in your code (exceptions exist for libraries that check the type of the objects by using the type function like sqlite3 or PyMySQL for instance).
 
