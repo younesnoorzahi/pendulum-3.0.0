@@ -12,3 +12,14 @@ Pendulum also improves the standard timedelta class by providing more intuitive 
 <li><a href="https://pendulum.eustace.io/">Official Website</a></li>
 <li><a href="https://pendulum.eustace.io/docs/">Documentation</a></li>
 <li><a href="https://github.com/python-pendulum/pendulum/issues">Issue Tracker</a></li>
+
+<h1>Limitations</h1>
+<p>Even though the DateTime class is a subclass of datetime there are some rare cases where it can’t replace the native class directly. Here is a list (non-exhaustive) of the reported cases with a possible solution, if any:</p>
+<li>sqlite3 will use the type() function to determine the type of the object by default. To work around it you can register a new adapter:</li>
+
+```
+from pendulum import DateTime
+from sqlite3 import register_adapter
+
+register_adapter(DateTime, lambda val: val.isoformat(' '))
+```
